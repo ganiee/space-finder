@@ -2,3 +2,5 @@
 
 GET https://3aepqllr4l.execute-api.us-east-2.amazonaws.com/prod/spaces/
 ###
+
+GET https://3aepqllr4l.execute-api.us-east-2.amazonaws.com/prod/spaces/

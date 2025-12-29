@@ -19,8 +19,8 @@ export class LambdaStack extends Stack {
 
         const helloLambda = new NodejsFunction(this, 'HelloHandler', {
             runtime: Runtime.NODEJS_18_X,
-            code: Code.fromAsset('src/services'),
-            handler: 'hello.main',
+            entry: 'src/services/hello.ts',
+            handler: 'handler',
             environment: {
                 SPACES_TABLE_NAME: props.spacesTable.tableName
             }
