@@ -8,7 +8,9 @@ console.log('launcher running');
 const app = new App();
 
 const datastack = new DataStack(app, 'DataStack');
-const lambdaStack = new LambdaStack(app, 'LambdaStack');
+const lambdaStack = new LambdaStack(app, 'LambdaStack', {
+    spacesTable: datastack.spacesTable
+});
 new ApiStack(app, 'ApiStack', {
     helloLambdaIntegration: lambdaStack.helloLambdaIntegration
 })
