@@ -11,7 +11,7 @@ export async function postSpaces(event: APIGatewayProxyEvent, ddbClient: DynamoD
     const item = JSON.parse(event.body);
 
     const result = await ddbClient.send(new PutItemCommand({
-        TableName: process.env.SPACES_TABLE_NAME,
+        TableName: process.env.TABLE_NAME,
         Item: {
             id: {
                 S: randomId

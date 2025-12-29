@@ -23,7 +23,7 @@ export class LambdaStack extends Stack {
             entry: 'src/services/spaces/handler.ts',
             handler: 'handler',
             environment: {
-                SPACES_TABLE_NAME: props.spacesTable.tableName
+                TABLE_NAME: props.spacesTable.tableName
             }
         });
 
