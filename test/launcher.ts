@@ -11,7 +11,7 @@ process.env.AWS_REGION = 'us-east-2';
 handler({
     httpMethod: 'POST',
     body: JSON.stringify({
-         location: 'old bridge'
+         location: 'edison'
     })
 } as any, {} as any).then(response => {
    console.log("Lambda response:", response);
