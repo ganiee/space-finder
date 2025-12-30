@@ -23,3 +23,9 @@ Content-Type: application/json
     "location": "california"
 }
 ### 
+
+
+###
+GET https://hl9pwjacd6.execute-api.us-east-2.amazonaws.com/prod/spaces
+
+### 
