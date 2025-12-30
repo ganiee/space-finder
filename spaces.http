@@ -26,6 +26,6 @@ Content-Type: application/json
 
 
 ###
-GET https://hl9pwjacd6.execute-api.us-east-2.amazonaws.com/prod/spaces
+GET https://hl9pwjacd6.execute-api.us-east-2.amazonaws.com/prod/spaces?id=fc17de52-b06d-4b73-88eb-da18cdf4221b
 
 ### 

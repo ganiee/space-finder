@@ -19,6 +19,9 @@ process.env.AWS_REGION = 'us-east-2';
 
 handler({
     httpMethod: 'GET',
+     queryStringParameters: {
+        id: 'fc17de52-b06d-4b73-88eb-da18cdf4221b'
+    }
    
 } as any, {} as any).then(response => {
    console.log("Lambda response:", response);
